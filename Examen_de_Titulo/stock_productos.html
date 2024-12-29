@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock de Productos</title>
+    <link rel="stylesheet" href="css/estilos_stock_productos.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Control de Stock de Productos</h1>
+            <button class="cerrar-sesion" onclick="location.href='cerrar_sesion.php'">Cerrar Sesión</button>
+        </header>
+        <main>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Código</th>
+                        <th>Nombre Producto</th>
+                        <th>Valor + IVA</th>
+                        <th>Cantidad Disponible</th>
+                        <th>Usuario</th>
+                        <th>Fecha Último Movimiento</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Ejemplo de fila -->
+                    <tr>
+                        <td>123</td>
+                        <td>Producto A</td>
+                        <td>$11.900</td>
+                        <td>10</td>
+                        <td>Admin</td>
+                        <td>2024-12-25</td>
+                        <td>
+                            <button class="boton-editar">Editar</button>
+                            <button class="boton-eliminar">Eliminar</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="botones-acciones">
+                <button class="boton-descargar">Descargar Stock</button>
+                <button class="boton-atras" onclick="location.href='pagina_administrador.html'">ATRÁS</button>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

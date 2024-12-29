@@ -1,0 +1,111 @@
+/* ==== Estilo global ==== */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #b3f0c0, #b3d9f0);
+}
+
+/* ==== Contenedor principal ==== */
+.container {
+    width: 90%;
+    max-width: 900px;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* ==== Encabezado ==== */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.8em;
+    color: #333;
+}
+
+.cerrar-sesion {
+    background: #5f9ea0;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.cerrar-sesion:hover {
+    background: #4682b4;
+}
+
+/* ==== Tabla ==== */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+thead {
+    background: #5f9ea0;
+    color: white;
+    text-align: left;
+}
+
+th, td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: center;
+    font-size: 1em;
+}
+
+tbody tr:nth-child(even) {
+    background: #f9f9f9;
+}
+
+tbody tr:hover {
+    background: #e0f7fa;
+}
+
+/* ==== Botones de acción ==== */
+.ver-detalle {
+    background: #5f9ea0;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    padding: 5px 15px;
+    font-size: 0.9em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.ver-detalle:hover {
+    background: #4682b4;
+}
+
+/* ==== Botón ATRÁS ==== */
+.boton-atras {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: white;
+    color: #333;
+    border: 2px solid #333;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+.boton-atras:hover {
+    background: #f0f0f0;
+}

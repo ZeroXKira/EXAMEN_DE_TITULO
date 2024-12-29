@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visualizar Factura/Boleta/Ingreso Manual</title>
+    <link rel="stylesheet" href="css/estilos_visualizar_documentos.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Visualizar Factura / Boleta / Ingreso Manual</h1>
+            <button class="cerrar-sesion">Cerrar Sesión</button>
+        </header>
+        <main>
+            <table>
+                <thead>
+                    <tr>
+                        <th>N° de Documento</th>
+                        <th>Tipo</th>
+                        <th>Fecha</th>
+                        <th>Usuario</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Ejemplo de fila -->
+                    <tr>
+                        <td>12345</td>
+                        <td>Factura</td>
+                        <td>2024-01-01</td>
+                        <td>Administrador</td>
+                        <td><button onclick="location.href='detalle_documento.html'">Ver Detalle</button></td>
+                    </tr>
+                    <tr>
+                        <td>67890</td>
+                        <td>Boleta</td>
+                        <td>2024-01-02</td>
+                        <td>Usuario</td>
+                        <td><button onclick="location.href='detalle_documento.html'">Ver Detalle</button></td>
+                    </tr>
+                </tbody>
+            </table>
+            <button class="boton-atras" onclick="location.href='pagina_principal.html'">ATRÁS</button>
+        </main>
+    </div>
+</body>
+</html>

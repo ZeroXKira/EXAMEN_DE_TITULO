@@ -1,0 +1,141 @@
+/* ==== Estilo global ==== */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #b3e6b3, #ffcccb);
+}
+
+/* ==== Contenedor principal ==== */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 50px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* ==== Encabezado ==== */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.8em;
+    color: #333;
+}
+
+.cerrar-sesion {
+    background: #ff4d4d;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.cerrar-sesion:hover {
+    background: #e60000;
+}
+
+/* ==== Tabla ==== */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+thead {
+    background: #5f9ea0;
+    color: white;
+}
+
+th, td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+thead th {
+    font-size: 1em;
+}
+
+tbody tr:nth-child(even) {
+    background: #f9f9f9;
+}
+
+tbody tr:hover {
+    background: #e0f7fa;
+}
+
+/* ==== Botones en las filas ==== */
+.boton-editar, .boton-eliminar {
+    padding: 5px 10px;
+    border-radius: 15px;
+    font-size: 0.9em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.boton-editar {
+    background: #5f9ea0;
+    color: white;
+    border: none;
+}
+
+.boton-editar:hover {
+    background: #4682b4;
+}
+
+.boton-eliminar {
+    background: #ff4d4d;
+    color: white;
+    border: none;
+}
+
+.boton-eliminar:hover {
+    background: #e60000;
+}
+
+/* ==== Botones generales ==== */
+.botones-acciones {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+button {
+    padding: 10px 15px;
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.boton-descargar {
+    background: #5f9ea0;
+    color: white;
+}
+
+.boton-descargar:hover {
+    background: #4682b4;
+}
+
+.boton-atras {
+    background: white;
+    color: #333;
+    border: 2px solid #333;
+}
+
+.boton-atras:hover {
+    background: #ddd;
+}

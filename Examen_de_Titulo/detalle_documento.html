@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalle del Documento</title>
+    <link rel="stylesheet" href="css/estilos_detalle_documento.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Visualización de Detalles</h1>
+            <button class="cerrar-sesion">Cerrar Sesión</button>
+        </header>
+        <main>
+            <div class="info-empresa">
+                <h2>Información de la Empresa</h2>
+                <p><strong>RUT Empresa:</strong> 12.345.678-9</p>
+                <p><strong>Nombre Empresa:</strong> Empresa A</p>
+                <p><strong>Correo:</strong> contacto@empresa.com</p>
+                <p><strong>Dirección:</strong> Calle Falsa 123</p>
+                <p><strong>Teléfono:</strong> +56 9 8765 4321</p>
+                <p><strong>Ciudad:</strong> Santiago</p>
+            </div>
+
+            <div class="info-productos">
+                <h2>Productos</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Código</th>
+                            <th>Nombre Producto</th>
+                            <th>Valor Neto</th>
+                            <th>Cantidad</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>123</td>
+                            <td>Producto A</td>
+                            <td>$10.000</td>
+                            <td>3</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <button class="boton-atras" onclick="location.href='visualizar_documentos.html'">ATRÁS</button>
+        </main>
+    </div>
+</body>
+</html>

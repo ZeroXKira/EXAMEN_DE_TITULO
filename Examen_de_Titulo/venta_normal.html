@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Módulo de Venta Normal</title>
+    <link rel="stylesheet" href="css/estilos_venta_normal.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Módulo de Venta Normal</h1>
+            <button class="cerrar-sesion" onclick="location.href='cerrar_sesion.php'">Cerrar Sesión</button>
+        </header>
+        <main>
+            <div class="form-container">
+                <form>
+                    <label for="nombre_cliente">Nombre de Cliente:</label>
+                    <input type="text" id="nombre_cliente" name="nombre_cliente">
+
+                    <label for="rut_cliente">RUT Cliente:</label>
+                    <input type="text" id="rut_cliente" name="rut_cliente">
+
+                    <label for="correo_cliente">Correo Cliente:</label>
+                    <input type="email" id="correo_cliente" name="correo_cliente">
+
+                    <label for="telefono_cliente">Teléfono Cliente:</label>
+                    <input type="tel" id="telefono_cliente" name="telefono_cliente">
+
+                    <label for="codigo_producto">Código:</label>
+                    <input type="text" id="codigo_producto" name="codigo_producto">
+
+                    <label for="cantidad">Cantidad:</label>
+                    <input type="number" id="cantidad" name="cantidad" value="1">
+                </form>
+            </div>
+
+            <div class="tabla-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Código</th>
+                            <th>Nombre Producto</th>
+                            <th>Valor + IVA</th>
+                            <th>Cantidad</th>
+                            <th>Fiado</th>
+                            <th>Eliminar</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Ejemplo de fila -->
+                        <tr>
+                            <td>12345</td>
+                            <td>Producto A</td>
+                            <td>$11.900</td>
+                            <td>1</td>
+                            <td><button class="boton-fiado">+ Fiado</button></td>
+                            <td><button class="boton-eliminar">X</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="totales-container">
+                <p>Valor Neto: <span id="valorNetoTotal">$0</span></p>
+                <p>IVA (19%): <span id="ivaTotal">$0</span></p>
+                <p>Total a Pagar: <span id="totalPagar">$0</span></p>
+                <button class="boton-pagar">PAGAR</button>
+            </div>
+
+            <div class="acciones-container">
+                <button class="boton-visualizar" onclick="location.href='ventas_realizadas.html'">Visualizar Ventas</button>
+                <button class="boton-visualizar" onclick="location.href='visualizacion_fiados.html'">Visualizar Fiado</button>
+                <button class="boton-atras" onclick="location.href='modulo_ventas.html'">ATRÁS</button>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

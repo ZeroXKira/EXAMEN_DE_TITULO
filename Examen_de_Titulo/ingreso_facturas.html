@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ingreso de Facturas/Boletas</title>
+    <link rel="stylesheet" href="css/estilos_facturas.css">
+    <script defer src="js/facturas.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Ingreso de Facturas / Boletas</h1>
+            <button class="cerrar-sesion" onclick="location.href='cerrar_sesion.php'">Cerrar Sesión</button>
+        </header>
+        <main>
+            <!-- Datos de la Empresa -->
+            <div class="form-container">
+                <h2>Datos de la Empresa</h2>
+                <label for="rut_empresa">Rut Empresa:</label>
+                <input type="text" id="rut_empresa" name="rut_empresa" required>
+
+                <label for="nombre_empresa">Nombre Empresa:</label>
+                <input type="text" id="nombre_empresa" name="nombre_empresa" required>
+
+                <label for="correo_empresa">Correo Empresa:</label>
+                <input type="email" id="correo_empresa" name="correo_empresa" required>
+
+                <label for="direccion_empresa">Dirección Empresa:</label>
+                <input type="text" id="direccion_empresa" name="direccion_empresa" required>
+
+                <label for="telefono_empresa">Teléfono Empresa:</label>
+                <input type="tel" id="telefono_empresa" name="telefono_empresa" required>
+
+                <label for="ciudad_empresa">Ciudad Empresa:</label>
+                <input type="text" id="ciudad_empresa" name="ciudad_empresa" required>
+            </div>
+
+            <!-- Agregar Ítems -->
+            <div class="form-container">
+                <h2>Agregar Ítems</h2>
+                <label for="codigo">Código:</label>
+                <input type="text" id="codigo" name="codigo" required>
+
+                <label for="nombre_producto">Nombre Producto:</label>
+                <input type="text" id="nombre_producto" name="nombre_producto" required>
+
+                <label for="valor_neto">Valor Neto:</label>
+                <input type="number" id="valor_neto" name="valor_neto" required>
+
+                <label for="cantidad">Cantidad:</label>
+                <input type="number" id="cantidad" name="cantidad" required>
+
+                <button type="button" onclick="agregarItem()">Agregar Ítem</button>
+            </div>
+
+            <!-- Tabla de Ítems -->
+            <div class="tabla-facturas">
+                <h2>Ítems de la Factura</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Código</th>
+                            <th>Nombre Producto</th>
+                            <th>Valor Neto</th>
+                            <th>Cantidad</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tabla-facturas-body">
+                        <!-- Filas dinámicas -->
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Botón para Grabar Factura -->
+            <button class="boton-grabar">Grabar Ingreso</button>
+        </main>
+    </div>
+</body>
+</html>

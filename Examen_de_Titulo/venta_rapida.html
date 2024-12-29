@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Venta Rápida</title>
+    <link rel="stylesheet" href="css/estilos_venta_rapida.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Venta Rápida</h1>
+            <button class="cerrar-sesion" onclick="location.href='cerrar_sesion.php'">Cerrar Sesión</button>
+        </header>
+        <main>
+            <div class="form-container">
+                <form id="ventaForm">
+                    <label for="codigo_producto">Código del Producto:</label>
+                    <input type="text" id="codigo_producto" name="codigo_producto" placeholder="Ingrese código" required>
+
+                    <label for="cantidad">Cantidad:</label>
+                    <input type="number" id="cantidad" name="cantidad" value="1" required>
+
+                    <button type="button" class="boton-agregar" onclick="agregarProducto()">Agregar Producto</button>
+                </form>
+            </div>
+
+            <div class="tabla-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Código</th>
+                            <th>Nombre Producto</th>
+                            <th>Valor Neto</th>
+                            <th>Valor + IVA</th>
+                            <th>Cantidad</th>
+                            <th>Total</th>
+                            <th>Eliminar</th>
+                        </tr>
+                    </thead>
+                    <tbody id="productosLista">
+                        <!-- Los productos se agregarán dinámicamente aquí -->
+                    </tbody>
+                </table>
+                <div class="totales">
+                    <p>Valor Neto Total: <span id="valorNetoTotal">$0</span></p>
+                    <p>IVA Total (19%): <span id="ivaTotal">$0</span></p>
+                    <p>Total a Pagar: <span id="totalPagar">$0</span></p>
+                </div>
+                <button class="boton-pagar" onclick="pagar()">PAGAR</button>
+                <button class="boton-atras" onclick="location.href='modulo_ventas.html'">ATRÁS</button>
+            </div>
+        </main>
+    </div>
+
+    <script src="js/venta_rapida.js"></script>
+</body>
+</html>

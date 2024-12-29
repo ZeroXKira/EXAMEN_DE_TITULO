@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visualización de Fiados</title>
+    <link rel="stylesheet" href="css/estilos_visualizar_fiados.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Visualización de Fiados</h1>
+            <button class="cerrar-sesion" onclick="location.href='cerrar_sesion.php'">Cerrar Sesión</button>
+        </header>
+        <main>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nombre Cliente</th>
+                        <th>RUT Cliente</th>
+                        <th>Correo</th>
+                        <th>Teléfono</th>
+                        <th>Valor Total</th>
+                        <th>Fecha</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Ejemplo de fila -->
+                    <tr>
+                        <td>Juan Pérez</td>
+                        <td>12.345.678-9</td>
+                        <td>juan.perez@gmail.com</td>
+                        <td>+56 9 1234 5678</td>
+                        <td>$10.000</td>
+                        <td>2024-01-01</td>
+                    </tr>
+                </tbody>
+            </table>
+            <button class="boton-descargar">Descargar Excel</button>
+            <button class="boton-atras" onclick="location.href='pagina_principal.html'">ATRÁS</button>
+        </main>
+    </div>
+</body>
+</html>

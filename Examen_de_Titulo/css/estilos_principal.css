@@ -1,0 +1,55 @@
+/* ==== Estilo global ==== */
+body {
+    font-family: Arial, sans-serif; /* Fuente general */
+    margin: 0;
+    padding: 0;
+    height: 100vh; /* Altura de la pantalla completa */
+    display: flex; /* Usar flexbox para centrar contenido */
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+    background: linear-gradient(135deg, #b3d9f0, #b3f0c0); /* Fondo con gradiente */
+}
+
+/* ==== Contenedor principal ==== */
+.container {
+    text-align: center; /* Centrar texto dentro del contenedor */
+    background: rgba(255, 255, 255, 0.8); /* Fondo semitransparente */
+    padding: 30px; /* Espaciado interno */
+    border-radius: 15px; /* Bordes redondeados */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Sombra para dar relieve */
+    width: 400px; /* Ancho fijo del contenedor */
+}
+
+/* ==== Título ==== */
+.container h1 {
+    margin-bottom: 20px; /* Espaciado inferior */
+    color: #333; /* Color del texto */
+    font-size: 2em; /* Tamaño del texto */
+    font-weight: bold; /* Negrita */
+}
+
+/* ==== Botones del menú ==== */
+.menu button {
+    width: 100%; /* Botones ocupan todo el ancho */
+    padding: 15px; /* Espaciado interno */
+    margin: 10px 0; /* Espaciado entre botones */
+    border: none; /* Sin bordes */
+    border-radius: 25px; /* Bordes redondeados */
+    background-color: #5f9ea0; /* Color de fondo */
+    color: white; /* Color del texto */
+    font-size: 1em; /* Tamaño del texto */
+    font-weight: bold; /* Negrita */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Animaciones */
+}
+
+/* Cambiar el fondo al pasar el cursor */
+.menu button:hover {
+    background-color: #4682b4; /* Fondo más oscuro */
+    transform: translateY(-3px); /* Mover hacia arriba */
+}
+
+/* Regresar a la posición original al hacer clic */
+.menu button:active {
+    transform: translateY(0);
+}

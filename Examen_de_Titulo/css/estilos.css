@@ -1,0 +1,81 @@
+/* Estilo global */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #b3f0c0, #b3d9f0);
+}
+
+/* Contenedor del formulario */
+.login-container {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 320px;
+}
+
+/* Título */
+.login-container h1 {
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+/* Campos de entrada */
+.login-container input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 25px;
+    background: #5f9ea0;
+    color: white;
+    text-align: center;
+    font-size: 1em;
+    outline: none;
+    transition: background-color 0.3s ease;
+}
+
+.login-container input::placeholder {
+    color: white;
+}
+
+.login-container input:focus {
+    background: #4682b4;
+}
+
+/* Botón */
+.login-container button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 25px;
+    background-color: #ffffff;
+    color: #333;
+    font-weight: bold;
+    font-size: 1em;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s, background-color 0.3s;
+}
+
+.login-container button:hover {
+    background-color: #f0f0f0;
+    transform: translateY(-3px);
+}
+
+.login-container button:active {
+    transform: translateY(0);
+}
+
+.error {
+    color: red;
+    margin-top: 10px;
+}

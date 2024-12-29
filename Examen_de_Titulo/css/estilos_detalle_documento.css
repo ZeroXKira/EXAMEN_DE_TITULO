@@ -1,0 +1,65 @@
+/* ==== Estilo global ==== */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #ffd27f, #ffb347);
+}
+
+/* ==== Contenedor principal ==== */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 50px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* ==== Encabezado ==== */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.8em;
+    color: #333;
+}
+
+.cerrar-sesion {
+    background: #ff4d4d;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+/* ==== Información ==== */
+.info-empresa, .info-productos {
+    margin: 20px 0;
+}
+
+h2 {
+    margin-bottom: 10px;
+}
+
+/* ==== Botón ATRÁS ==== */
+.boton-atras {
+    background: white;
+    color: #333;
+    border: 2px solid #333;
+    margin-top: 20px;
+    padding: 10px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.boton-atras:hover {
+    background: #ddd;
+}

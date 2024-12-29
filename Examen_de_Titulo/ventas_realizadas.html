@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ventas Realizadas</title>
+    <link rel="stylesheet" href="css/estilos_ventas_realizadas.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Ventas Realizadas</h1>
+            <button class="cerrar-sesion" onclick="location.href='cerrar_sesion.php'">Cerrar Sesión</button>
+        </header>
+        <main>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Fecha</th>
+                        <th>Cliente</th>
+                        <th>Código Producto</th>
+                        <th>Nombre Producto</th>
+                        <th>Cantidad</th>
+                        <th>Valor Neto</th>
+                        <th>IVA</th>
+                        <th>Total</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Ejemplo de fila -->
+                    <tr>
+                        <td>2024-01-01</td>
+                        <td>Juan Pérez</td>
+                        <td>12345</td>
+                        <td>Producto A</td>
+                        <td>2</td>
+                        <td>$20.000</td>
+                        <td>$3.800</td>
+                        <td>$23.800</td>
+                    </tr>
+                </tbody>
+            </table>
+            <button class="boton-descargar">Descargar Excel</button>
+            <button class="boton-atras" onclick="location.href='pagina_principal.html'">ATRÁS</button>
+        </main>
+    </div>
+</body>
+</html>
